@@ -27,7 +27,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define OS_WIN32
+
 /* Include this file only for OSX / BSD compilations */
 #ifdef OS_DARWIN
 #define USE_FMEM_WRAPPER 1
@@ -43,7 +43,9 @@
 
 #ifdef USE_FMEM_WRAPPER
 FILE *SCFmemopen(void *, size_t, const char *);
-#define fmemopen SCFmemopen 
+#else
+/* Else use the normal fmemopen */
+#define SCFmemopen fmemopen
 #endif
 
 #endif /* __FMEMOPEN_H__ */
