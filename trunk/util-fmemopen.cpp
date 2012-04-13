@@ -24,7 +24,11 @@
 
 /* #include "suricata-common.h" */
 #include "util-fmemopen.h"
-
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define OS_WIN32
 #ifdef OS_DARWIN
 #define USE_FMEM_WRAPPER 1
 #endif
@@ -46,13 +50,16 @@
  */
 FILE *SCFmemopen(void *buf, size_t size, const char *mode) {
     char temppath[MAX_PATH - 13];
-    if (0 == GetTempPath(sizeof(temppath), temppath))
+    if (0 == GetTempPath(sizeof(temppath), temppath)) {
+		puts("Can't get temp path");
         return NULL;
-
+	}
     char filename[MAX_PATH + 1];
-    if (0 == GetTempFileName(temppath, "SC", 0, filename))
+    if (0 == GetTempFileName(temppath, "SC", 0, filename)) {
+        puts("Can't get file name");
         return NULL;
-
+    }
+	printf("file::%s\n",filename);
     FILE *f = fopen(filename, "wb");
     if (NULL == f)
         return NULL;
