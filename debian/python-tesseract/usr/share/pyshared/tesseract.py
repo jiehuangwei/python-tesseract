@@ -130,39 +130,6 @@ OEM_TESSERACT_ONLY = _tesseract.OEM_TESSERACT_ONLY
 OEM_CUBE_ONLY = _tesseract.OEM_CUBE_ONLY
 OEM_TESSERACT_CUBE_COMBINED = _tesseract.OEM_TESSERACT_CUBE_COMBINED
 OEM_DEFAULT = _tesseract.OEM_DEFAULT
-class ImageThresholder(_object):
-    __swig_setmethods__ = {}
-    __setattr__ = lambda self, name, value: _swig_setattr(self, ImageThresholder, name, value)
-    __swig_getmethods__ = {}
-    __getattr__ = lambda self, name: _swig_getattr(self, ImageThresholder, name)
-    __repr__ = _swig_repr
-    def __init__(self): 
-        this = _tesseract.new_ImageThresholder()
-        try: self.this.append(this)
-        except: self.this = this
-    __swig_destroy__ = _tesseract.delete_ImageThresholder
-    __del__ = lambda self : None;
-    def Clear(self): return _tesseract.ImageThresholder_Clear(self)
-    def IsEmpty(self): return _tesseract.ImageThresholder_IsEmpty(self)
-    def SetRectangle(self, *args): return _tesseract.ImageThresholder_SetRectangle(self, *args)
-    def GetImageSizes(self, *args): return _tesseract.ImageThresholder_GetImageSizes(self, *args)
-    def IsColor(self): return _tesseract.ImageThresholder_IsColor(self)
-    def IsBinary(self): return _tesseract.ImageThresholder_IsBinary(self)
-    def GetScaleFactor(self): return _tesseract.ImageThresholder_GetScaleFactor(self)
-    def SetSourceYResolution(self, *args): return _tesseract.ImageThresholder_SetSourceYResolution(self, *args)
-    def GetSourceYResolution(self): return _tesseract.ImageThresholder_GetSourceYResolution(self)
-    def GetScaledYResolution(self): return _tesseract.ImageThresholder_GetScaledYResolution(self)
-    def SetEstimatedResolution(self, *args): return _tesseract.ImageThresholder_SetEstimatedResolution(self, *args)
-    def GetScaledEstimatedResolution(self): return _tesseract.ImageThresholder_GetScaledEstimatedResolution(self)
-    def SetImage(self, *args): return _tesseract.ImageThresholder_SetImage(self, *args)
-    def ThresholdToPix(self, *args): return _tesseract.ImageThresholder_ThresholdToPix(self, *args)
-    def GetPixRect(self): return _tesseract.ImageThresholder_GetPixRect(self)
-    def GetPixRectGrey(self): return _tesseract.ImageThresholder_GetPixRectGrey(self)
-ImageThresholder_swigregister = _tesseract.ImageThresholder_swigregister
-ImageThresholder_swigregister(ImageThresholder)
-cvar = _tesseract.cvar
-kPointsPerInch = cvar.kPointsPerInch
-
 MAX_NUM_INT_FEATURES = _tesseract.MAX_NUM_INT_FEATURES
 class TessBaseAPI(_object):
     __swig_setmethods__ = {}
@@ -202,7 +169,6 @@ class TessBaseAPI(_object):
     def SetImage(self, *args): return _tesseract.TessBaseAPI_SetImage(self, *args)
     def SetSourceResolution(self, *args): return _tesseract.TessBaseAPI_SetSourceResolution(self, *args)
     def SetRectangle(self, *args): return _tesseract.TessBaseAPI_SetRectangle(self, *args)
-    def SetThresholder(self, *args): return _tesseract.TessBaseAPI_SetThresholder(self, *args)
     def GetThresholdedImage(self): return _tesseract.TessBaseAPI_GetThresholdedImage(self)
     def GetRegions(self, *args): return _tesseract.TessBaseAPI_GetRegions(self, *args)
     def GetTextlines(self, *args): return _tesseract.TessBaseAPI_GetTextlines(self, *args)
@@ -256,6 +222,8 @@ class TessBaseAPI(_object):
     if _newclass:DeleteBlockList = staticmethod(_tesseract.TessBaseAPI_DeleteBlockList)
 TessBaseAPI_swigregister = _tesseract.TessBaseAPI_swigregister
 TessBaseAPI_swigregister(TessBaseAPI)
+cvar = _tesseract.cvar
+kPointsPerInch = cvar.kPointsPerInch
 
 def TessBaseAPI_Version():
   return _tesseract.TessBaseAPI_Version()
