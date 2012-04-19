@@ -20,9 +20,6 @@
 #include "strngs.h"
 #include "tprintf.h"
 #include "tesseractmain.h"
-#ifdef __darwin__
-	#include "fmemopen.h"
-#endif
 
 #include "main_dummy.h"
 #include "stdio.h"
@@ -164,7 +161,7 @@ char* ProcessPagesRaw(const char* image,tesseract::TessBaseAPI* api) {
 	free(buffer);
 	return retStr;
  }
- 
+#if defined(__opencv__) || defined(__opencv2__)
  /* from PyBLOB project 
   http://code.google.com/p/pyblobs/issues/attachmentText?id=2&aid=4459562154860045232&name=iplimage_t.h&token=ed989cead6fe486664a024d538bccc2b
   */
@@ -256,3 +253,5 @@ bool SetVariable(const char* var, const char* value, tesseract::TessBaseAPI* api
   printf ("set variable %s result %d\n", var, res); 
   return res;
 }
+
+#endif

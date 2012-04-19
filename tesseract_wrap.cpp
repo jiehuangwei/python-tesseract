@@ -2939,41 +2939,40 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 
 /* -------- TYPES TABLE (BEGIN) -------- */
 
-#define SWIGTYPE_m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void swig_types[0]
-#define SWIGTYPE_p_BLOCK_LIST swig_types[1]
-#define SWIGTYPE_p_Boxa swig_types[2]
-#define SWIGTYPE_p_DENORM swig_types[3]
-#define SWIGTYPE_p_ETEXT_DESC swig_types[4]
-#define SWIGTYPE_p_FILE swig_types[5]
-#define SWIGTYPE_p_GenericVectorT_STRING_t swig_types[6]
-#define SWIGTYPE_p_INT_FEATURE_STRUCT swig_types[7]
-#define SWIGTYPE_p_OSResults swig_types[8]
-#define SWIGTYPE_p_Pix swig_types[9]
-#define SWIGTYPE_p_ROW swig_types[10]
-#define SWIGTYPE_p_STRING swig_types[11]
-#define SWIGTYPE_p_TBLOB swig_types[12]
-#define SWIGTYPE_p_TessCallback3T_UNICHARSET_const_R_int_PAGE_RES_p_t swig_types[13]
-#define SWIGTYPE_p_a_512__INT_FEATURE_STRUCT swig_types[14]
-#define SWIGTYPE_p_bool swig_types[15]
-#define SWIGTYPE_p_char swig_types[16]
-#define SWIGTYPE_p_double swig_types[17]
-#define SWIGTYPE_p_float swig_types[18]
-#define SWIGTYPE_p_int swig_types[19]
-#define SWIGTYPE_p_m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void swig_types[20]
-#define SWIGTYPE_p_p_Pixa swig_types[21]
-#define SWIGTYPE_p_p_bool swig_types[22]
-#define SWIGTYPE_p_p_char swig_types[23]
-#define SWIGTYPE_p_p_int swig_types[24]
-#define SWIGTYPE_p_tesseract__CubeRecoContext swig_types[25]
-#define SWIGTYPE_p_tesseract__Dawg swig_types[26]
-#define SWIGTYPE_p_tesseract__MutableIterator swig_types[27]
-#define SWIGTYPE_p_tesseract__PageIterator swig_types[28]
-#define SWIGTYPE_p_tesseract__ResultIterator swig_types[29]
-#define SWIGTYPE_p_tesseract__TessBaseAPI swig_types[30]
-#define SWIGTYPE_p_tesseract__Tesseract swig_types[31]
-#define SWIGTYPE_p_unsigned_char swig_types[32]
-static swig_type_info *swig_types[34];
-static swig_module_info swig_module = {swig_types, 33, 0, 0, 0, 0};
+#define SWIGTYPE_p_BLOCK_LIST swig_types[0]
+#define SWIGTYPE_p_Boxa swig_types[1]
+#define SWIGTYPE_p_DENORM swig_types[2]
+#define SWIGTYPE_p_ETEXT_DESC swig_types[3]
+#define SWIGTYPE_p_FILE swig_types[4]
+#define SWIGTYPE_p_GenericVectorT_STRING_t swig_types[5]
+#define SWIGTYPE_p_INT_FEATURE_STRUCT swig_types[6]
+#define SWIGTYPE_p_OSResults swig_types[7]
+#define SWIGTYPE_p_Pix swig_types[8]
+#define SWIGTYPE_p_ROW swig_types[9]
+#define SWIGTYPE_p_STRING swig_types[10]
+#define SWIGTYPE_p_TBLOB swig_types[11]
+#define SWIGTYPE_p_TessCallback3T_UNICHARSET_const_R_int_PAGE_RES_p_t swig_types[12]
+#define SWIGTYPE_p_a_512__INT_FEATURE_STRUCT swig_types[13]
+#define SWIGTYPE_p_bool swig_types[14]
+#define SWIGTYPE_p_char swig_types[15]
+#define SWIGTYPE_p_double swig_types[16]
+#define SWIGTYPE_p_float swig_types[17]
+#define SWIGTYPE_p_int swig_types[18]
+#define SWIGTYPE_p_m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void swig_types[19]
+#define SWIGTYPE_p_p_Pixa swig_types[20]
+#define SWIGTYPE_p_p_bool swig_types[21]
+#define SWIGTYPE_p_p_char swig_types[22]
+#define SWIGTYPE_p_p_int swig_types[23]
+#define SWIGTYPE_p_tesseract__CubeRecoContext swig_types[24]
+#define SWIGTYPE_p_tesseract__Dawg swig_types[25]
+#define SWIGTYPE_p_tesseract__MutableIterator swig_types[26]
+#define SWIGTYPE_p_tesseract__PageIterator swig_types[27]
+#define SWIGTYPE_p_tesseract__ResultIterator swig_types[28]
+#define SWIGTYPE_p_tesseract__TessBaseAPI swig_types[29]
+#define SWIGTYPE_p_tesseract__Tesseract swig_types[30]
+#define SWIGTYPE_p_unsigned_char swig_types[31]
+static swig_type_info *swig_types[33];
+static swig_module_info swig_module = {swig_types, 32, 0, 0, 0, 0};
 #define SWIG_TypeQuery(name) SWIG_TypeQueryModule(&swig_module, &swig_module, name)
 #define SWIG_MangledTypeQuery(name) SWIG_MangledTypeQueryModule(&swig_module, &swig_module, name)
 
@@ -3466,22 +3465,6 @@ SWIGINTERN PyObject *_wrap_PTIsTextType(PyObject *SWIGUNUSEDPARM(self), PyObject
   return resultobj;
 fail:
   return NULL;
-}
-
-
-SWIGINTERN int Swig_var_kPolyBlockNames_set(PyObject *_val) {
-  SWIG_exception_fail(SWIG_ArgError(SWIG_AttributeError), "in variable '""read-only kPolyBlockNames""' of type '""char const *[]""'");
-  return 0;
-fail:
-  return 1;
-}
-
-
-SWIGINTERN PyObject *Swig_var_kPolyBlockNames_get(void) {
-  PyObject *pyobj = 0;
-  
-  pyobj = SWIG_NewPointerObj(SWIG_as_voidptr(kPolyBlockNames), SWIGTYPE_p_p_char,  0 );
-  return pyobj;
 }
 
 
@@ -5727,35 +5710,6 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_TessBaseAPI_SetFillLatticeFunc(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  tesseract::TessBaseAPI *arg1 = (tesseract::TessBaseAPI *) 0 ;
-  tesseract::FillLatticeFunc arg2 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  PyObject * obj1 = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"OO:TessBaseAPI_SetFillLatticeFunc",&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_tesseract__TessBaseAPI, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "TessBaseAPI_SetFillLatticeFunc" "', argument " "1"" of type '" "tesseract::TessBaseAPI *""'"); 
-  }
-  arg1 = reinterpret_cast< tesseract::TessBaseAPI * >(argp1);
-  {
-    int res = SWIG_ConvertMember(obj1, SWIG_as_voidptr(&arg2), sizeof(tesseract::FillLatticeFunc),SWIGTYPE_m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void);
-    if (!SWIG_IsOK(res)) {
-      SWIG_exception_fail(SWIG_ArgError(res), "in method '" "TessBaseAPI_SetFillLatticeFunc" "', argument " "2"" of type '" "tesseract::FillLatticeFunc""'"); 
-    }
-  }
-  (arg1)->SetFillLatticeFunc(arg2);
-  resultobj = SWIG_Py_Void();
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_TessBaseAPI_DetectOS(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   tesseract::TessBaseAPI *arg1 = (tesseract::TessBaseAPI *) 0 ;
@@ -6766,7 +6720,6 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"TessBaseAPI_End", _wrap_TessBaseAPI_End, METH_VARARGS, NULL},
 	 { (char *)"TessBaseAPI_IsValidWord", _wrap_TessBaseAPI_IsValidWord, METH_VARARGS, NULL},
 	 { (char *)"TessBaseAPI_GetTextDirection", _wrap_TessBaseAPI_GetTextDirection, METH_VARARGS, NULL},
-	 { (char *)"TessBaseAPI_SetFillLatticeFunc", _wrap_TessBaseAPI_SetFillLatticeFunc, METH_VARARGS, NULL},
 	 { (char *)"TessBaseAPI_DetectOS", _wrap_TessBaseAPI_DetectOS, METH_VARARGS, NULL},
 	 { (char *)"TessBaseAPI_GetFeaturesForBlob", _wrap_TessBaseAPI_GetFeaturesForBlob, METH_VARARGS, NULL},
 	 { (char *)"TessBaseAPI_FindRowForBox", _wrap_TessBaseAPI_FindRowForBox, METH_VARARGS, NULL},
@@ -6802,7 +6755,6 @@ static PyMethodDef SwigMethods[] = {
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
-static swig_type_info _swigt__m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void = {"_m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void", "tesseract::FillLatticeFunc|void (Wordrec::*)(MATRIX const &,list_rec *const &,UNICHARSET const &,BlamerBundle *)", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_BLOCK_LIST = {"_p_BLOCK_LIST", "BLOCK_LIST *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_Boxa = {"_p_Boxa", "Boxa *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_DENORM = {"_p_DENORM", "DENORM *", 0, 0, (void*)0, 0};
@@ -6837,7 +6789,6 @@ static swig_type_info _swigt__p_tesseract__Tesseract = {"_p_tesseract__Tesseract
 static swig_type_info _swigt__p_unsigned_char = {"_p_unsigned_char", "unsigned char *", 0, 0, (void*)0, 0};
 
 static swig_type_info *swig_type_initial[] = {
-  &_swigt__m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void,
   &_swigt__p_BLOCK_LIST,
   &_swigt__p_Boxa,
   &_swigt__p_DENORM,
@@ -6872,7 +6823,6 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_unsigned_char,
 };
 
-static swig_cast_info _swigc__m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void[] = {  {&_swigt__m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_BLOCK_LIST[] = {  {&_swigt__p_BLOCK_LIST, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_Boxa[] = {  {&_swigt__p_Boxa, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_DENORM[] = {  {&_swigt__p_DENORM, 0, 0, 0},{0, 0, 0, 0}};
@@ -6907,7 +6857,6 @@ static swig_cast_info _swigc__p_tesseract__Tesseract[] = {  {&_swigt__p_tesserac
 static swig_cast_info _swigc__p_unsigned_char[] = {  {&_swigt__p_unsigned_char, 0, 0, 0},{0, 0, 0, 0}};
 
 static swig_cast_info *swig_cast_initial[] = {
-  _swigc__m_Wordrec__f_r_q_const__MATRIX_r_q_const__p_list_rec_r_q_const__UNICHARSET_p_BlamerBundle__void,
   _swigc__p_BLOCK_LIST,
   _swigc__p_Boxa,
   _swigc__p_DENORM,
@@ -7643,7 +7592,6 @@ SWIG_init(void) {
   SWIG_Python_SetConstant(d, "PT_VERT_LINE",SWIG_From_int(static_cast< int >(PT_VERT_LINE)));
   SWIG_Python_SetConstant(d, "PT_NOISE",SWIG_From_int(static_cast< int >(PT_NOISE)));
   SWIG_Python_SetConstant(d, "PT_COUNT",SWIG_From_int(static_cast< int >(PT_COUNT)));
-  SWIG_addvarlink(SWIG_globals(),(char*)"kPolyBlockNames",Swig_var_kPolyBlockNames_get, Swig_var_kPolyBlockNames_set);
   SWIG_Python_SetConstant(d, "ORIENTATION_PAGE_UP",SWIG_From_int(static_cast< int >(tesseract::ORIENTATION_PAGE_UP)));
   SWIG_Python_SetConstant(d, "ORIENTATION_PAGE_RIGHT",SWIG_From_int(static_cast< int >(tesseract::ORIENTATION_PAGE_RIGHT)));
   SWIG_Python_SetConstant(d, "ORIENTATION_PAGE_DOWN",SWIG_From_int(static_cast< int >(tesseract::ORIENTATION_PAGE_DOWN)));
